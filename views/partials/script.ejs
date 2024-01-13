@@ -1,0 +1,32 @@
+<script>
+    const bars = document.querySelector(".bars")
+    const options = document.querySelector(".options")
+    const closeBtn = document.querySelector(".fa-x")
+    const dropdown = document.querySelector('.dropdown')
+    const contactBtn = document.querySelector('.contact')
+
+    function openMenu(interface) {
+        interface.style.transition = '0.3s ease-out'
+        interface.style.opacity = 1;
+        interface.style.pointerEvents = 'all'
+    }
+
+    function closeMenu(interface) {
+        interface.style.opacity = 0;
+        interface.style.pointerEvents = 'none'
+    }
+
+    bars.addEventListener('click', () => {
+        openMenu(options)
+    })
+    closeBtn.addEventListener('click', () => {
+        closeMenu(options)
+    })
+    contactBtn.addEventListener('click', () => {
+        if (dropdown.style.opacity == 0) {
+            openMenu(dropdown)
+        } else {
+            closeMenu(dropdown)
+        }
+    })
+</script>
