@@ -115,7 +115,10 @@ section {
 section .text {
     display: flex;
     flex-direction: column;
-    gap: 3rem
+    gap: 3rem;
+    background: #72483d;
+    border-radius: 10px;
+    padding: 1rem
 }
 
 .image {
@@ -200,6 +203,11 @@ section .text {
         background-color: #FFF7F0;
         opacity: 1;
     color: black
+}
+
+.bg-white .text {
+    background: none;
+    padding: 0
 }
 
 .bg-white .card {
