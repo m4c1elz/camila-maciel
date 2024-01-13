@@ -137,7 +137,7 @@ section .text {
 }
 
 .home-main {
-    height: 85vh;
+    min-height: 85vh;
 }
 
 .card-section {
