@@ -27,6 +27,10 @@ app.get("/solucoes", (req, res) => {
     res.render("solutions")
 })
 
+app.get("*", (req, res) => {
+    res.status(404).render("error")
+})
+
 app.listen(port, () => {
     console.log("Servidor iniciado na porta " + port)
     console.log("Acesse em: localhost:" + port)
