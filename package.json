@@ -5,13 +5,17 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ."
+    "build": "echo Building",
+    "dev": "nodemon .",
+    "start": "node ."
   },
   "author": "Felipe Maciel",
   "license": "ISC",
   "dependencies": {
     "ejs": "^3.1.9",
     "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
   }
 }
